@@ -1,11 +1,7 @@
-let student = {
-	name:'Joydeep'
+const student = {
+	name:"Joydeep"
 }
 Object.prototype.getKeys = function(){
-	let result = [];
-	for(let key in student){
-		result.push(key);
-	}
-	return result;
+	return Object.keys(this)
 }
 console.log(student.getKeys())
