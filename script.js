@@ -1,7 +1,7 @@
-const student = {
-	name
+let student = {
+	name:'Joydeep'
 }
-student.prototype.getKeys = function(){
+Object.prototype.getKeys = function(){
 	let result = [];
 	for(let key in student){
 		result.push(key);
